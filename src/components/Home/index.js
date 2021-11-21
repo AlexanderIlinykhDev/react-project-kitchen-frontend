@@ -27,7 +27,7 @@ const mapDispatchToProps = dispatch => ({
   onLoad: (tab, pager, payload) =>
     dispatch({ type: HOME_PAGE_LOADED, tab, pager, payload }),
   onUnload: () =>
-    dispatch({  type: HOME_PAGE_UNLOADED })
+    dispatch({ type: HOME_PAGE_UNLOADED })
 });
 
 class Home extends React.Component {
@@ -50,11 +50,11 @@ class Home extends React.Component {
 
         <Banner token={this.props.token} appName={this.props.appName} />
         <div className="container page">
-          
-          {/* THIS COMPONENT WILL BE DELETED THIS IS WELCOME */}
-          <ToDelete />
 
-          {/* <div className="row">
+          {/* THIS COMPONENT WILL BE DELETED THIS IS WELCOME */}
+          {/*<ToDelete />*/}
+
+          <div className="row">
             <MainView />
 
             <div className="col-md-3">
@@ -68,7 +68,7 @@ class Home extends React.Component {
 
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
 
       </div>
